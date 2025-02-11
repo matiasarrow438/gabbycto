@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Token</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a472a 100%);
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .banner {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .info-box {
+            background: rgba(42, 98, 61, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .info-box:hover {
+            transform: translateY(-5px);
+        }
+        .contract-address {
+            word-break: break-all;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF6B6B;
+        }
+        .contract-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .copy-button {
+            background: #2a623d;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        .copy-button:hover {
+            background: #367c4b;
+        }
+        .button {
+            background: #2a623d;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #367c4b;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function copyCA() {
+            const ca = "HvM8HL78HVr9rpoEEpr37FBs6dDsNuynPMWq27dpump";
+            navigator.clipboard.writeText(ca);
+            const button = document.getElementById('copyButton');
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = 'Copy CA';
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/image.png" alt="Welcome Token Banner" class="banner">
+        
+        <div class="info-box">
+            <h1>Welcome Token</h1>
+            <h2>Ticker: $S&P500</h2>
+            
+            <div class="contract-wrapper">
+                <h3>Contract Address:</h3>
+                <button class="copy-button" id="copyButton" onclick="copyCA()">Copy CA</button>
+                <a href="https://dexscreener.com/solana/HvM8HL78HVr9rpoEEpr37FBs6dDsNuynPMWq27dpump" 
+                   class="copy-button" 
+                   target="_blank">DexScreener</a>
+            </div>
+            <div class="contract-address">
+                HvM8HL78HVr9rpoEEpr37FBs6dDsNuynPMWq27dpump
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2>🚀 Quick and Easy Trading with Trojan Bot 🚀</h2>
+            <p>Get instant access to Welcome Token using the fastest and most reliable trading bot on Solana!</p>
+            <a href="https://t.me/solana_trojanbot?start=r-gabbymif" class="button" target="_blank">Trade with Trojan</a>
+        </div>
+
+        <div class="info-box">
+            <h2>🌟 Join the Best Community in Crypto 🌟</h2>
+            <p>Welcome to MemeVault - The ultimate community for CTO (Call to Open) and coin drops, led by the legendary Gabby!</p>
+            <p>Why join us?</p>
+            <ul>
+                <li>Get early access to the hottest token launches</li>
+                <li>Learn from experienced traders</li>
+                <li>Be part of an active and supportive community</li>
+                <li>Stay updated with the latest CTO opportunities</li>
+            </ul>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>TikTok</h3>
+                <p>Follow Gabby for the latest updates</p>
+                <a href="https://www.tiktok.com/@gabbymifsud" class="button" target="_blank">Follow Us</a>
+            </div>
+            <div class="stat-box">
+                <h3>Twitter</h3>
+                <p>Official Token Twitter</p>
+                <a href="https://x.com/SP500_CTO" class="button" target="_blank">Follow Us</a>
+            </div>
+            <div class="stat-box">
+                <h3>Telegram</h3>
+                <p>Join the MemeVault community</p>
+                <a href="https://t.me/MEMEVAULTTTT" class="button" target="_blank">Join Chat</a>
+            </div>
+            <div class="stat-box">
+                <h3>Discord</h3>
+                <p>Connect with fellow traders</p>
+                <a href="https://discord.gg/GHejqsdZ" class="button" target="_blank">Join Server</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        
